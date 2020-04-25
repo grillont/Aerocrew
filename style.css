@@ -1,0 +1,137 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(50, 50, 50);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    height: max-content;
+    
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    background-color: rgb(70, 70, 70);
+    box-shadow: 1px 1px 3px black;
+    border-radius: 2px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+    width: border-box;
+    /*height: 50px;*/
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+.navbar:after{
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    background-color: rgb(240, 240, 240);
+    opacity: 15%;
+}
+
+.navbar_btn{
+    position: relative;
+    z-index: 5;
+    
+    color: white;
+    font-family: 'Verdana';
+    
+    margin: 10px;
+    padding: 8px;
+    
+}
+
+.navbar_btn:after{
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 51%;
+    left: 51%;
+    
+    border-bottom: solid 2px white;
+    
+    transition-property: right, left;
+    transition-duration: 0.4s;
+}
+
+.navbar_btn:hover:after{
+    right: 0%;
+    left: 0%;
+}
+
+.panel_img{
+    width: 90vw;
+    height: 48vw;
+    
+    margin: auto;
+    
+    background-color: orange;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 2px;
+}
+
+.bloc{
+    background-color: rgb(100, 100, 100);
+    width: 90%;
+    height: 45vh;
+    
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bloc_left{
+    flex-direction: row;
+}
+
+.bloc_right{
+    flex-direction: row-reverse;
+}
+
+.bloc_img{
+    background-color: red;
+    border-radius: 2px;
+    
+    height: 90%;
+    width: 40%;
+}
+
+.bloc_text{
+    background-color: blue;
+    border-radius: 2px;
+    
+    height: 90%;
+    width: 50%;
+}
