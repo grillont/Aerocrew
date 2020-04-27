@@ -8,6 +8,19 @@ a{
     text-decoration: none;
 }
 
+.logo{
+    position: absolute;
+    width: 25vw;
+    top: 15vw;
+    left: 36vw;
+    
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
 .container{
     width: 90%;
     height: max-content;
@@ -24,9 +37,8 @@ a{
     border-radius: 2px;
 }
 
-.navbar{
+nav{
     position: fixed;
-    top: 0;
     right: 0;
     left: 0;
     
@@ -38,19 +50,6 @@ a{
     
     padding-left: 25vw;
     padding-right: 25vw;
-}
-
-.navbar:after{
-    content: '';
-    
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    
-    background-color: rgb(240, 240, 240);
-    opacity: 15%;
 }
 
 .navbar_btn{
@@ -87,14 +86,40 @@ a{
 }
 
 .panel_img{
-    width: 90vw;
-    height: 48vw;
+    width: 100%;
+    height: 50vw;
     
     margin: auto;
     
     background-color: orange;
     box-shadow: 1px 1px 3px black;
     border-radius: 2px;
+    
+    overflow: hidden; 
+    position: relative;
+    
+    z-index: -1;
+}
+
+.slider{
+    display: flex;
+    width: max-content;
+    position: absolute;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide{
+    0% {left: 0;}
+    10% {left: 0;}
+    30% {left: -100vw;}
+    40% {left: -100vw;}
+    60% {left: -200vw;}
+    70% {left: -200vw;}
+    100% {left: 0;}
+}
+
+.panel_img img{
+    width: 100vw;
 }
 
 .bloc{
