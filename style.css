@@ -105,16 +105,16 @@ nav{
     display: flex;
     width: max-content;
     position: absolute;
-    animation: slide 20s infinite;
+    animation: slide 30s infinite;
 }
 
 @keyframes slide{
     0% {left: 0;}
-    10% {left: 0;}
-    30% {left: -100vw;}
-    40% {left: -100vw;}
-    60% {left: -200vw;}
-    70% {left: -200vw;}
+    23% {left: 0;}
+    33% {left: -100vw;}
+    56% {left: -100vw;}
+    66% {left: -200vw;}
+    89% {left: -200vw;}
     100% {left: 0;}
 }
 
