@@ -1,4 +1,5 @@
 if(window.innerWidth > 1080){
+    
     const windowWidth = window.innerWidth;
     const scrolled = window.scrollY; 
     const navbar = document.querySelector('nav');
@@ -6,19 +7,18 @@ if(window.innerWidth > 1080){
     const imgHeight = windowWidth/2;
     navbar.style.top = (imgHeight - scrolled - navHeight)/2 + 'px';
 
-
     window.addEventListener('scroll', ()=>{
-       const windowWidth = window.innerWidth;
-       const scrolled = window.scrollY; 
-       const navbar = document.querySelector('nav');
-       const navHeight = navbar.offsetHeight;
-       const imgHeight = windowWidth/2;
+        const windowWidth = window.innerWidth;
+        const scrolled = window.scrollY; 
+        const navbar = document.querySelector('nav');
+        const navHeight = navbar.offsetHeight;
+        const imgHeight = windowWidth/2;
 
-       if(scrolled > imgHeight - navHeight){
-           navbar.style.top = '0px';
-       }else{
-           navbar.style.top = (imgHeight - scrolled - navHeight)/2 + 'px';
-       }
+        if(scrolled > imgHeight - navHeight){
+            navbar.style.top = '0px';
+        }else{
+            navbar.style.top = (imgHeight - scrolled - navHeight)/2 + 'px';
+        }
     });
 }else{
     var btn_nav_hamb = document.querySelector('.menu_btn_hamb');

@@ -3,7 +3,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(240, 240, 240);
 }
 
 a{
@@ -21,22 +21,6 @@ a{
     padding: 5px;
     padding-left: 7px;
     padding-right: 7px;
-}
-
-.container{
-    width: 90%;
-    height: max-content;
-    
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    
-    padding-top: 30px;
-    padding-bottom: 30px;
-    
-    background-color: rgb(70, 70, 70);
-    box-shadow: 1px 1px 3px black;
-    border-radius: 2px;
 }
 
 .navbar_btn{
@@ -64,7 +48,7 @@ nav{
     left: 0;
 
     padding: 0;
-    background-color: red;
+    background-color: rgb(50, 50, 50);
 
     transition-property: right;
     transition-duration: 0.6s;
@@ -80,13 +64,13 @@ nav{
 }
 
 .navbar_btn{
-    background-color: green;
+    background-color: transparent;
     position: relative;
     z-index: 5;
 
     color: white;
     font-family: 'Verdana';
-    font-size: 16px;
+    font-size: 17px;
 
     margin: 10px;
     padding: 8px;
@@ -130,42 +114,48 @@ nav{
 }
 
 .bloc{
-    background-color: rgb(100, 100, 100);
-    width: 90%;
-    height: 45vh;
+    background-color: green;
+    width: 98%;
+    height: max-content;
     
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
-    border-radius: 2px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.bloc_left{
-    flex-direction: row;
-}
-
-.bloc_right{
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
 .bloc_img{
     background-color: red;
     border-radius: 2px;
     
-    height: 90%;
-    width: 40%;
+    height: 60vw;
+    width: 100%;
 }
 
 .bloc_text{
-    background-color: blue;
+    background-color: rgb(238, 238, 238);
     border-radius: 2px;
     
-    height: 90%;
-    width: 50%;
+    height: 35vw;
+    width: 100%;
+}
+
+.bloc_left .bloc_img{
+
+}
+
+.bloc_right .bloc_img{
+
+}
+
+.bloc_left .bloc_text{
+
+}
+
+.bloc_right .bloc_text{
+
 }
 
 }

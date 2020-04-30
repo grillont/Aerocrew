@@ -3,7 +3,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(240, 240, 240);
 }
 
 a{
@@ -23,29 +23,13 @@ a{
     padding-right: 7px;
 }
 
-.container{
-    width: 90%;
-    height: max-content;
-    
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    
-    padding-top: 30px;
-    padding-bottom: 30px;
-    
-    background-color: rgb(70, 70, 70);
-    box-shadow: 1px 1px 3px black;
-    border-radius: 2px;
-}
-
 .menu_btn_hamb{display: none;}
 
 nav{
     position: fixed;
     right: 0;
     left: 0;
-    
+    z-index: 10;
     width: border-box;
 }
 
@@ -128,42 +112,72 @@ nav{
 }
 
 .bloc{
-    background-color: rgb(100, 100, 100);
-    width: 90%;
-    height: 45vh;
+    background-color: transparent;
+    width: 97%;
+    height: 30vw;
     
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
     
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.bloc_left{
-    flex-direction: row;
-}
-
-.bloc_right{
-    flex-direction: row-reverse;
+    position: relative;
 }
 
 .bloc_img{
     background-color: red;
     border-radius: 2px;
     
-    height: 90%;
-    width: 40%;
+    height: 30vw;
+    width: 40vw;
+    
+    position: absolute;
 }
 
 .bloc_text{
-    background-color: blue;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 1px 1px 3px grey;
     border-radius: 2px;
     
-    height: 90%;
-    width: 50%;
+    height: 23vw;
+    width: 40vw;
+    
+    position: absolute;
+}
+
+.bloc_left .bloc_img{
+    top: 0;
+    left: 0;
+}
+
+.bloc_right .bloc_img{
+    top: 0;
+    right: 0;
+}
+
+.bloc_left .bloc_text{
+    top: 1vw;
+    right: 25vw;
+    
+    transition-property: right;
+    transition-duration: 1.3s;
+    transition-delay: 0.4s;
+}
+
+.bloc_right .bloc_text{
+    top: 1vw;
+    left: 25vw;
+    
+    transition-property: left;
+    transition-duration: 1.3s;
+    transition-delay: 0.4s;
+}
+
+.bloc_right:hover .bloc_text{
+    left: 15vw;
+}
+
+.bloc_left:hover .bloc_text{
+    right: 15vw;
 }
 
 }
